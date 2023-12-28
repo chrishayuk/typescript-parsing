@@ -1,0 +1,21 @@
+{
+  "name": "typescript-parsing",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/generator": "^7.23.6",
+    "acorn": "^8.11.2",
+    "crypto": "^1.0.1",
+    "escodegen": "^2.1.0",
+    "espree": "^9.6.1",
+    "recast": "^0.23.4"
+  }
+}

@@ -1,0 +1,231 @@
+{
+    "pos": 0,
+    "end": 131,
+    "kind": "SourceFile",
+    "statements": {
+      "0": {
+        "pos": 0,
+        "end": 131,
+        "kind": "FunctionDeclaration",
+        "name": {
+          "pos": 8,
+          "end": 18,
+          "kind": "Identifier",
+          "escapedText": "fibonacci"
+        },
+        "parameters": {
+          "0": {
+            "pos": 19,
+            "end": 28,
+            "kind": "Parameter",
+            "name": {
+              "pos": 19,
+              "end": 20,
+              "kind": "Identifier",
+              "escapedText": "n"
+            },
+            "type": {
+              "pos": 21,
+              "end": 28,
+              "kind": "NumberKeyword"
+            }
+          },
+          "pos": 19,
+          "end": 28,
+          "hasTrailingComma": false
+        },
+        "type": {
+          "pos": 30,
+          "end": 37,
+          "kind": "NumberKeyword"
+        },
+        "body": {
+          "pos": 37,
+          "end": 131,
+          "kind": "Block",
+          "statements": {
+            "0": {
+              "pos": 39,
+              "end": 81,
+              "kind": "IfStatement",
+              "expression": {
+                "pos": 48,
+                "end": 54,
+                "kind": "BinaryExpression",
+                "left": {
+                  "pos": 48,
+                  "end": 49,
+                  "kind": "Identifier",
+                  "escapedText": "n"
+                },
+                "operatorToken": {
+                  "pos": 49,
+                  "end": 52,
+                  "kind": "LessThanEqualsToken"
+                },
+                "right": {
+                  "pos": 52,
+                  "end": 54,
+                  "kind": "FirstLiteralToken",
+                  "text": "1",
+                  "numericLiteralFlags": 0
+                }
+              },
+              "thenStatement": {
+                "pos": 55,
+                "end": 81,
+                "kind": "Block",
+                "statements": {
+                  "0": {
+                    "pos": 57,
+                    "end": 75,
+                    "kind": "ReturnStatement",
+                    "expression": {
+                      "pos": 72,
+                      "end": 74,
+                      "kind": "Identifier",
+                      "escapedText": "n"
+                    }
+                  },
+                  "pos": 57,
+                  "end": 75,
+                  "hasTrailingComma": false
+                },
+                "multiLine": true
+              }
+            },
+            "1": {
+              "pos": 81,
+              "end": 129,
+              "kind": "ReturnStatement",
+              "expression": {
+                "pos": 92,
+                "end": 128,
+                "kind": "BinaryExpression",
+                "left": {
+                  "pos": 92,
+                  "end": 109,
+                  "kind": "CallExpression",
+                  "expression": {
+                    "pos": 92,
+                    "end": 102,
+                    "kind": "Identifier",
+                    "escapedText": "fibonacci"
+                  },
+                  "arguments": {
+                    "0": {
+                      "pos": 103,
+                      "end": 108,
+                      "kind": "BinaryExpression",
+                      "left": {
+                        "pos": 103,
+                        "end": 104,
+                        "kind": "Identifier",
+                        "escapedText": "n"
+                      },
+                      "operatorToken": {
+                        "pos": 104,
+                        "end": 106,
+                        "kind": "MinusToken"
+                      },
+                      "right": {
+                        "pos": 106,
+                        "end": 108,
+                        "kind": "FirstLiteralToken",
+                        "text": "1",
+                        "numericLiteralFlags": 0
+                      }
+                    },
+                    "pos": 103,
+                    "end": 108,
+                    "hasTrailingComma": false
+                  }
+                },
+                "operatorToken": {
+                  "pos": 109,
+                  "end": 111,
+                  "kind": "PlusToken"
+                },
+                "right": {
+                  "pos": 111,
+                  "end": 128,
+                  "kind": "CallExpression",
+                  "expression": {
+                    "pos": 111,
+                    "end": 121,
+                    "kind": "Identifier",
+                    "escapedText": "fibonacci"
+                  },
+                  "arguments": {
+                    "0": {
+                      "pos": 122,
+                      "end": 127,
+                      "kind": "BinaryExpression",
+                      "left": {
+                        "pos": 122,
+                        "end": 123,
+                        "kind": "Identifier",
+                        "escapedText": "n"
+                      },
+                      "operatorToken": {
+                        "pos": 123,
+                        "end": 125,
+                        "kind": "MinusToken"
+                      },
+                      "right": {
+                        "pos": 125,
+                        "end": 127,
+                        "kind": "FirstLiteralToken",
+                        "text": "2",
+                        "numericLiteralFlags": 0
+                      }
+                    },
+                    "pos": 122,
+                    "end": 127,
+                    "hasTrailingComma": false
+                  }
+                }
+              }
+            },
+            "pos": 39,
+            "end": 129,
+            "hasTrailingComma": false
+          },
+          "multiLine": true
+        }
+      },
+      "pos": 0,
+      "end": 131,
+      "hasTrailingComma": false
+    },
+    "endOfFileToken": {
+      "pos": 131,
+      "end": 131,
+      "kind": "EndOfFileToken"
+    },
+    "text": "function fibonacci(n: number): number {\n    if (n <= 1) {\n        return n;\n    }\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+    "fileName": "samples/fibonacci.ts",
+    "path": "/users/chrishayuk/chris-source/working/typescript-parsing/samples/fibonacci.ts",
+    "resolvedPath": "/users/chrishayuk/chris-source/working/typescript-parsing/samples/fibonacci.ts",
+    "originalFileName": "samples/fibonacci.ts",
+    "languageVersion": 1,
+    "languageVariant": 0,
+    "scriptKind": 3,
+    "isDeclarationFile": false,
+    "hasNoDefaultLib": false,
+    "nodeCount": 33,
+    "identifierCount": 9,
+    "symbolCount": 0,
+    "parseDiagnostics": {},
+    "bindDiagnostics": {},
+    "pragmas": {},
+    "referencedFiles": {},
+    "typeReferenceDirectives": {},
+    "libReferenceDirectives": {},
+    "amdDependencies": {},
+    "identifiers": {},
+    "imports": {},
+    "moduleAugmentations": "[Circular]",
+    "ambientModuleNames": "[Circular]",
+    "jsDocParsingMode": 0
+  }
